@@ -173,7 +173,7 @@ export function DashboardPage({
               {!isSupportedNetwork && isConnected ? (
                 <div className="mt-3 space-y-3">
                   <p className="text-sm text-amber-700">
-                    Switch your wallet into a supported BTK network to unlock live claim actions.
+                    Switch your wallet to Lisk Sepolia to unlock live BTK claim actions.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {supportedDeployments.map((item) => (
@@ -183,7 +183,7 @@ export function DashboardPage({
                         onClick={() => void switchNetwork(item.chainId)}
                         type="button"
                       >
-                        Switch to {item.label}
+                        {item.label === 'Lisk Sepolia' ? 'Switch to Lisk Sepolia' : `Switch to ${item.label}`}
                       </button>
                     ))}
                   </div>

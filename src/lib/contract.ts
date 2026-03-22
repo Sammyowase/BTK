@@ -31,9 +31,16 @@ export const DEPLOYMENTS: Record<number, Deployment> = {
   4202: {
     address: '0x9F72CAB486B52ff08d00D81E0718750B70c15B64',
     chainId: 4202,
-    label: 'Chain 4202',
+    label: 'Lisk Sepolia',
     chainHex: '0x106a',
-    chainName: 'Chain 4202',
+    chainName: 'Lisk Sepolia',
+    rpcUrls: ['https://rpc.sepolia-api.lisk.com'],
+    blockExplorerUrls: ['https://sepolia-blockscout.lisk.com'],
+    nativeCurrency: {
+      name: 'Ether',
+      symbol: 'ETH',
+      decimals: 18,
+    },
   },
   11155111: {
     address: '0x68415A59c8798A78253d85536A05Aef8417E2651',

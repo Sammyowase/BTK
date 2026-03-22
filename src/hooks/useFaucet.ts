@@ -214,7 +214,7 @@ export function useFaucet() {
               ],
             })
             await syncWallet(false)
-            toast.success(`${targetDeployment.label} added and selected.`)
+            toast.success(`${targetDeployment.label} added and selected in your wallet.`)
             return
           } catch (addError) {
             toast.error(extractErrorMessage(addError))

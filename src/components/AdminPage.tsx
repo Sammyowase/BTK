@@ -44,7 +44,7 @@ export function AdminPage({
   const gateMessage = !isConnected
     ? 'Connect the owner wallet to access admin actions.'
     : !isSupportedNetwork
-      ? 'Switch to a supported deployed network before using admin actions.'
+      ? 'Switch to Lisk Sepolia before using admin actions.'
       : !isOwner
         ? 'This connected wallet is not the contract owner.'
         : null
@@ -117,7 +117,7 @@ export function AdminPage({
                     onClick={() => void switchNetwork(item.chainId)}
                     type="button"
                   >
-                    Switch to {item.label}
+                    {item.label === 'Lisk Sepolia' ? 'Switch to Lisk Sepolia' : `Switch to ${item.label}`}
                   </button>
                 ))}
               </>

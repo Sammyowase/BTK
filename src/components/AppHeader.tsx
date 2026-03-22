@@ -89,7 +89,7 @@ export function AppHeader({
           <div>
             <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-muted">Network Access</p>
             <p className="mt-1 text-sm text-muted">
-              Move directly into a supported BTK deployment from the interface.
+              Move directly into Lisk Sepolia from the interface and connect to the live BTK deployment.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -104,7 +104,7 @@ export function AppHeader({
                 onClick={() => void switchNetwork(item.chainId)}
                 type="button"
               >
-                {item.label}
+                {item.label === 'Lisk Sepolia' ? 'Switch to Lisk Sepolia' : `Switch to ${item.label}`}
               </button>
             ))}
           </div>
